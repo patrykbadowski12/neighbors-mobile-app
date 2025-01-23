@@ -34,3 +34,23 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+".env" 
+
+# Logs
+*.log
+
+# Build files
+build/
+.cxx/
+
+# Local configuration
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+buildOutputCleanup/
+gradle.properties

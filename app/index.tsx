@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-
+import Auth from '@/components/Auth';
 export default function Index() {
 
   const handleGoogleLogin = () => {
@@ -16,6 +16,7 @@ export default function Index() {
           <FontAwesome name="google" size={24} color="white" style={styles.icon} />
           <Text style={styles.buttonText}>Login with Google</Text>
         </TouchableOpacity>
+        <Auth/>
       </View>
     </ImageBackground>
   );
