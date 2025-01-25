@@ -1,21 +1,11 @@
-import { StyleSheet, Text, View, TouchableOpacity, ImageBackground } from 'react-native';
-import { FontAwesome } from '@expo/vector-icons';
+import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import Auth from '@/components/Auth';
 export default function Index() {
-
-  const handleGoogleLogin = () => {
-    console.log('Google login pressed');
-  };
-
   return (
     <ImageBackground source={require('../assets/images/neighbors.jpg')} style={styles.background} resizeMode='cover'>
       <View style={styles.container}>
         <Text style={styles.title}>Welcome to Neighbors!</Text>
         <Text style={styles.subtitle}>Discover what's happening in your neighborhood. Connect, share, and build a stronger community together.</Text>
-        <TouchableOpacity style={styles.googleButton} onPress={handleGoogleLogin}>
-          <FontAwesome name="google" size={24} color="white" style={styles.icon} />
-          <Text style={styles.buttonText}>Login with Google</Text>
-        </TouchableOpacity>
         <Auth/>
       </View>
     </ImageBackground>
